@@ -1,0 +1,1 @@
+cal.clicked[QDate].connect(self.showDate)  # 创建信号连接。
