@@ -1,0 +1,4 @@
+Year,WHO region,Country,Beverage Types,Display Value
+1986,Western Pacific, Viet Nam,Wine,0
+1986,Western Pacific, Viet Nam,Wine,2
+1987,Western Pacific, Viet Nam,Wine,0

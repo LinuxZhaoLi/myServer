@@ -1,0 +1,44 @@
+anaconda:
+conda list  查看包安装
+notebook 写代码 shift + enter 运行  localhost 8888
+anaconda search -t conda  tensorflow   查找包
+anaconda show jjhelmus/tensorflow   查看安装方法
+
+numpy 读数据
+(1) 创建数组
+（2）读取数据
+（3）取数据
+（4） 数组判断
+（5）数组计算
+    numpy.sum(axis=1) 行求和  numpy.sum(axis=0) 求列和
+（6） 类型转化
+    numpy.astype(float)
+（7） 常用函数
+    1 创建数组  numpy.arange(15)
+    2 转换  numpy.arange(15).reshape(3,5)
+    3 ndim   查看维度
+    4 dtype  类型
+    5 size    数据的格式
+    6 numpy.zeros((3,4))  创建一个初始值为为0的。
+      numpy.ones((2,3,4),dtype=np.int32)  创建一个初始值为为0的。
+    7 随机值
+      numpy.random.random(2,3)
+    8 操作
+       A*B  对应位置相乘
+       A.dot(B) numpy.dot(A,B) 第一行*第一列  相加
+    9 向下取整  2.9--> 2
+        numpy.floor(10*numpy.random.random((3,4)))
+    10 矩阵转化为向量
+        numpy.ravel()
+    11 向量转化为矩阵
+        numpy.shape = (6,2)
+    12 数据拼接
+        numpy.hstack((a,b))  按行拼接
+        numpy.vstack((a,b))   按列拼接
+    13  切分
+    14  赋值
+        浅赋值  numpy.view
+        深复制  numpy.copy
+    15 排序
+
+
