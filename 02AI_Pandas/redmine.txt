@@ -1,0 +1,38 @@
+pandas 数据处理
+在numpy之上，底层是Numpy
+1 数据读取：
+    food_info = pandas.read_csv("food_info.csv")
+    类型： DataFrame
+    help(pandas.read_csv())  获取帮助信息
+    打印数据：
+    food_info.head()
+    获取列名：
+    food_info.colums()
+2 获取数据：
+    pandas.loc[0]
+    获取列数据：
+    ss = food_info["列名"]
+    取两列: 1 获取列名  2 获取指定列的列名
+    col_names = food_info.columns.toList()
+    gram_colums = []
+    for c in col_names:
+        if c.endswith("(g)"):
+            gram_colums.append(c)
+    gram_df = food_info[gram_colums]
+3 数据计算
+    + - * /
+4 排序：inplace 是否产生新的DataFrame   ascending 是否排序
+    sort_values("列名",inplace=True,ascending=False)
+
+5 泰坦尼克号获救：
+    age_is_null = pandas.isnull(pandas.read_csv()["age"])  判断是不是缺失值
+    排除缺失值：
+    good_ages = titanic_survival["Age"][age_is_null == False]
+    .mean()
+6 一个量和其它量的关系
+    pivot_table(index="列名",value="列名",aggfunc=np.mean)
+7  Series结构：pandas 每一列是一个Series结构数据
+    pandas 是由 Series 组成。
+
+
+

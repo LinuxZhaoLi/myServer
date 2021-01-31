@@ -1,0 +1,13 @@
+画图工具：
+1 画图 x,y轴。
+     plt.plot(x,y)
+     plt.xticks(rotation=45) x轴标签旋转
+     plt.xlabel("lab")
+     plt.ylabel("lab")
+     plt.title("xxxxxxxxx")
+
+2 显示
+    plt.show()
+3 添加子图
+    fig = plt.figure()  获取画图空间
+    fig.add_subplot(2,2,3)
